@@ -89,7 +89,7 @@ header > article > .nav > ul > li > .sub{
     z-index: 5;
     transition: 0.5s;
     display: none;
-    transform: translateY(100%);
+    transform: translateY(90%);
     bottom: -15px;
     left: 15px;
 }
