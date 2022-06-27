@@ -1,0 +1,146 @@
+@import url(./common.css);
+@import url(./sub_common.css);
+
+main{
+    width: 100%;
+    font-size: 18px;
+}
+
+main .con1 .tit-sub p:nth-of-type(5){
+    color: #004796;
+    font-weight: bold;
+}
+
+
+main .sec3 p{
+    width: 1400px;
+    margin: 200px auto;
+    line-height: 2;
+    font-size: 22px;
+    color: #404040;
+}
+
+/*  */
+
+main .sec4{
+        width: 1400px;
+        height: 500px;
+    text-align: center;
+    margin: 0px auto;
+    position: relative;
+}
+
+main .sec4 .ani-circle {
+    width: 40%;
+    border-radius: 100%;
+    text-align: center;
+}
+
+main .sec4 h3{
+    position: absolute;
+    left:calc(50% - 94px); top:calc(50% - 217px);
+    background-color: rgba(0,71,150,0.7);
+    color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    font-size: 25px;
+    margin:0 auto;
+    padding: 100px;
+}
+
+main .sec4 .ani-circle p{
+    background-color: rgba(216, 240, 254, 0.7);
+    color: #004796;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    font-size: 18px;
+    position: absolute;
+    /* left:calc(50% - 75px); top:calc(50% - 75px); */
+    bottom: 10%;
+}
+
+main .sec4 .ani-circle p:nth-of-type(1){
+    bottom: calc(20% - 70px);
+    left: 47%;
+    padding: 70px 0;
+}
+
+main .sec4 .ani-circle p:nth-of-type(2){
+    bottom: calc(20% - 70px);
+    left: 35%;
+    padding: 60px 0;
+}
+
+main .sec4 .ani-circle p:nth-of-type(3){
+    bottom: calc(20% - 70px);
+    right: 27%;
+    padding: 80px 0;
+}
+
+main .sec4 .ani-circle p:nth-of-type(4){
+    bottom: calc(20% - 70px);
+    right: 15%;
+    padding: 70px 0;
+}
+
+main .sec4 .ani-circle p:nth-of-type(5){
+    bottom: calc(20% - 70px);
+    left: 23%;
+    padding: 70px 0;
+}
+
+
+
+/*  */
+
+main .sec5{
+    width: 1400px;
+    margin: 100px auto;
+}
+
+main .sec5 ul li{
+    display: flex;
+    align-items:stretch;
+    padding: 30px;
+}
+
+main .sec5 ul li p{
+    font-size: 20px;
+}
+
+main .sec5 ul li p:nth-of-type(1){
+    padding-right: 100px;
+}
+
+main .sec5 ul li p:nth-of-type(2){
+    line-height: 30px;
+}
+
+main .sec5 ul li:nth-of-type(1) p:nth-of-type(1){
+    font-weight: bold;
+    padding-right: 65px;
+}
+
+main .sec5 ul li:nth-of-type(2) p:nth-of-type(1){
+    font-weight: bold;
+}
+
+main .sec5 ul li:nth-of-type(3) p:nth-of-type(1){
+    font-weight: bold;
+}
+
+main .sec5 ul li:nth-of-type(4) p:nth-of-type(1){
+    padding-right: 90px;
+    font-weight: bold;
+}
+
+main .sec5 ul li:nth-of-type(5) p:nth-of-type(2){
+    padding-left: 65px;
+}
+
+main .sec5 ul li p:nth-of-type(2) span{
+    color: #F4B41C;
+}
+

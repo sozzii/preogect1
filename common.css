@@ -1,0 +1,287 @@
+@charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+*{
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Pretendard, Roboto, 'Noto Sans KR', 'Segoe UI', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+html, body{
+    margin: 0;
+}
+
+p{margin: 0;}
+
+ul,li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*  */
+
+main .visual{
+    margin: 0; 
+    position: relative;
+}
+
+header > article{
+    width: 100%;
+    height: 100px;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px;
+    transition: .5s;
+}
+
+/* header article.active{
+    background-color: white;
+} */
+
+header article:hover {
+    background-color: white;
+}
+
+.logo{
+    padding: 0px 30px; 
+    align-items: center;
+}
+
+.logo > a > img{
+    width: 200px;
+    padding-top: 10px; 
+}
+
+header > article > .nav > ul{
+    display: flex;
+}
+
+header > article > .nav > ul > li{
+    position: relative;
+    font-weight: bold;
+}
+
+header > article > .nav > ul > li > a{
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 18px;
+    color: #004796;
+}
+
+
+header > article > .nav > ul > li > .sub{
+    position: absolute;
+    background-color: white;
+    z-index: 5;
+    transition: 0.5s;
+    display: none;
+    transform: translateY(100%);
+    bottom: -15px;
+    left: 15px;
+}
+
+
+header > article > .nav > ul > li > div > a{
+    display: block;
+    color: #004796;
+    text-align: center;
+    padding: 10px;
+}
+
+
+header > article > .nav > ul > li:hover > div{
+    display: block;
+}
+
+
+.login{
+    padding: 10px 30px;
+    color: #666666;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/*  */
+
+footer{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    margin: 0px auto;
+    padding: 50px;
+    border-top: 1px solid #004796;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot .flogo{
+    padding-left: 20px;
+}
+
+.foot .flogo img{
+    width: 200px;
+}
+
+.foot .info{
+    text-align: center;
+    color: #666666;    
+}
+
+
+.foot .info a{
+    padding: 15px;
+}
+
+.foot .info p:nth-of-type(2){
+    letter-spacing: 1px;
+}
+
+.foot .info p:nth-of-type(3){
+    color: #C5C0B8;
+    font-size: 10px;
+}
+
+.foot .info p{
+    margin: 10px;
+    line-height: 20px;
+}
+
+/*  */
+
+.foot .site{
+    padding-right: 20px;
+    position: relative;
+}
+
+.foot .site .sm-site{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.foot .site .sm-site .site-flex{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.foot .site .sm-site p b{
+    color: #004796;
+}
+
+.foot .site .sm-site p {
+    padding-right: 10px;
+}
+
+.foot .site .sm-site p:nth-of-type(2) span{
+    border: 1px solid #666666;
+    margin: 2px;
+    display: block;
+    width: 15px;
+}
+
+.foot .site .sm-site p:nth-of-type(2){padding-right: 0;}
+
+
+.foot .site .sm-site .outsite, .insite{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #666666;
+    padding: 10px;
+}
+
+.foot .site .sm-site .outsite{
+    margin: 0 0 20px 20px; 
+}
+
+.foot .site .sm-site .insite{
+    margin: 0 0 20px 0px; 
+}
+
+.foot .site .insite p:nth-of-type(2):hover span:nth-of-type(2),
+.foot .site .outsite p:nth-of-type(2):hover span:nth-of-type(2){
+width: 13px;
+transition: .5s;
+}
+
+.foot .site .insite p:nth-of-type(2):hover span:nth-of-type(3),
+.foot .site .outsite p:nth-of-type(2):hover span:nth-of-type(3){
+width: 10px;
+transition: .5s;
+}
+
+.foot .site .sns a{
+    padding: 10px;
+    color: #004796;
+}
+
+/* burger menu */
+
+.burger a{
+    line-height: 2;
+}
+
+.burger button.active{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20%;
+    font-size: 15px;    
+}
+
+.burger .insite2,
+.burger .outsite2{
+    display: none;
+}
+
+.burger .insite2 a:hover,
+.burger .outsite2 a:hover{
+    font-weight: bold;
+    transition: .5s;
+}
+
+.burger .insite2.active{
+    width: 150px;
+    white-space: pre-line;
+    display: block;
+    position: absolute;
+    right: 50%;
+    transform: translate(-13%,-93%);
+    background-color: white;
+    border: 1px solid #666666;
+    padding: 0 15px 15px 15px;
+    transition: .5s;
+}
+
+.burger .outsite2.active{    
+    width: 150px;
+    white-space: pre-line;
+    display: block;
+    position: absolute;
+    right: 10%;
+    transform: translate(10%,-92%);
+    background-color: white;
+    border: 1px solid #666666;
+    padding: 0 15px 15px 15px;
+    transition: .5s;
+}

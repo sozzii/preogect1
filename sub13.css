@@ -1,0 +1,66 @@
+@import url(./common.css);
+@import url(./sub_common.css);
+
+main{
+    width: 100%;
+}
+
+main .con1 .tit-sub p:nth-of-type(1){
+    color: #004796;
+    font-weight: bold;
+}
+
+/*  */
+.map{position: relative;}
+
+
+.map .root_daum_roughmap{
+    width: 1200px;
+    height: 800px ;
+    transform: translate(98%,50%);
+}
+
+.map p{    
+    text-align: center;
+    margin: 0px auto;
+    padding: 20px;
+    border-bottom: 1px solid #004796;
+    width: 1200px;
+    transform: translatey(100%);
+    color: #004796;
+    font-size: 20px;
+}
+
+.sec2, .sec3, .sec4, .sec5{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translate(10%,10%);
+    width: 1400px;
+    margin: 100px auto;
+}
+
+.sec2 p img, .sec3 p img, .sec4 p img, .sec5 p img {
+    margin-right: 50px;
+}
+
+.sec2 ul li, .sec3 ul li, .sec4 ul li, .sec5 ul li{
+    line-height: 30px;
+}
+
+li:nth-of-type(1){
+    color: #004796;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.sec5 li a{
+    color: crimson;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+
+
+

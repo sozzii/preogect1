@@ -1,0 +1,231 @@
+@import url(./common.css);
+@import url(./sub_common.css);
+
+main{
+    width: 100%;
+}
+
+main .con1 .tit-sub p:nth-of-type(1){
+    color: #004796;
+    font-weight: bold;
+}
+
+/*  */
+
+ul p.tit{
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #004796;
+    font-size: 18px;
+}
+
+.sec2{
+    width: 1400px;
+    margin: 100px auto;
+}
+
+.sec2 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+}
+
+.sec2 ul li div.txt{
+    color: #404040;
+}
+
+
+/*  */
+
+.sec3{
+    width: 1400px;
+    height: 200px;
+    margin: 100px auto;
+}
+
+.sec3 ul{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    line-height: 30px;
+}
+
+.sec3 ul li{}
+
+.sec3 ul li div.txt{
+    margin-right: 20px;
+}
+
+.sec3 ul li div.txt-1{
+    color: #666666;
+    padding-top: 49px;
+}
+
+.sec3 li:nth-of-type(2){
+    display: flex;
+}
+
+/*  */
+
+.sec4{
+    width: 1400px;
+    height: 400px;
+    margin: 100px auto;
+    color: #404040;
+}
+
+
+
+.sec4 ul{}
+
+.sec4 ul li:nth-of-type(1){}
+
+.sec4 ul li.system{}
+
+.sec4 ul li.system p.tit-{
+    padding: 30px 20px 10px 0;
+    color: #004796;
+}
+
+.sec4 ul li.system div{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.sec4 ul li.system div p{
+    margin-right: 20px;
+}
+
+.sec4 ul li.system div p.box{
+    border: 1px solid #004796;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center
+}
+
+.sec4 ul li.system div p.arrow{
+    width: ;
+}
+
+/* div.container{
+    background-color: #D8F0FE;
+    width: 100%;
+    padding: 20px 0;
+} */
+
+/*  */
+
+.sec5{
+    width: 1400px;
+    height: 500px;
+    margin: 100px auto;
+}
+
+.sec5 ul li.gradutest{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec5 .gradutest .txt{
+    color: #404040;
+}
+
+.sec5 .indi{
+    display: flex;
+    width: 500px;
+    position: relative;
+}
+
+.sec5 .indi a{
+    border: 1px solid #004796;
+    background: none;
+    z-index: -1;
+    color: #004796;
+    border-radius: 100%;
+    padding: 45px 10px;
+    line-height: 30px;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    animation: gradu-move 5s infinite alternate;
+    transition: .5s;
+}
+
+.sec5 .indi a::before{
+    bottom: 0;
+    border-radius: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: rgba(159,206,232,0.7);
+    z-index: -1;
+    transition: .8s;
+}
+
+.sec5 .indi a:hover::before{
+    height: 100%;    
+}
+
+@keyframes gradu-move{
+    0%{transform: translateY(0%);}
+    50%{transform: translateY(-50%);}
+    100%{transform: translateY(0%);}
+}
+
+
+.sec5 .indi p img{
+    transform: translateY(40%);
+}
+
+.sec5 ul li.gradu .test{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.sec5 ul li.gradu .test .box{
+    border: 1px solid #004796;
+    border-radius: 5px;
+    padding: 20px;
+    color: #404040;
+}
+
+.sec5 ul li:nth-of-type(2) .test .arrow{
+    margin: 0 20px;
+}
+
+.sec5 ul li:nth-of-type(2) .tit-l{
+    color: #004796;
+}
+
+/*  */
+
+.sec6{    
+    width: 1400px;
+    height: 300px;
+    margin: 100px auto;
+}
+
+.sec6 .box2{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sec6 .box2 li p:nth-of-type(1){
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #404040;
+}
+
+.sec6 .box2 li:nth-of-type(2){
+    margin: 0px 50px 0px 50px;
+}
+
+.sec6 .box2 li p{
+    color: #666666;
+}

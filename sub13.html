@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오시는길_아동예술교육전공</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./sub13.css">
+    <script defer src="./common.js"></script>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <main>
+        <p class="visual">
+            <img src="./img/backimg1.png">
+        </p>
+        
+        <section class="sec1">
+            <div class="con1">
+                <div class="tit-sub">
+                    <p>
+                        <a>MAP</a>
+                    </p>
+                    <p>·</p>
+                </div>
+                <div class="share">
+                    <a href="" alt="">
+                        <img src="./img/share.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="map">
+
+        <!-- * 카카오맵 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+        <div id="daumRoughmapContainer1656040890622" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+        <script charset="UTF-8" class="daum_roughmap_loader_script"
+            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+            new daum.roughmap.Lander({
+                "timestamp": "1656040890622",
+                "key": "2aq6x",
+                "mapWidth": "640",
+                "mapHeight": "360"
+            }).render();
+        </script>
+            <!-- <div class="mapimg"></div> -->
+            <p>04310 서울특별시 용산구 청파로47길 100 (청파동2가) 숙명여자대학교 제 1캠퍼스</p>
+        </section>
+
+        <section class="sec2">
+            <p>
+                <img src="./img/subway.jpg" alt="">
+            </p>
+            <ul>
+                <li>지하철</li>
+                <li>4호선 숙대입구역 10번출구</li>
+                <li>1호선 남영역 1번출구</li>
+                <li>6호선 효창공원앞역 2번출구</li>
+                <li>경의·중앙선 효창공원앞역 4번출구</li>
+            </ul>
+        </section>
+        <section class="sec3">
+            <p>
+                <img src="./img/bus.jpg" alt="">
+            </p>
+            <ul>
+                <li>버스</li>
+                <li>4호선 숙대입구역 10번출구 - 간선버스 400번 / 마을버스 용산04번 탑승 - 숙대 (정·후문) 하차 </li>
+                <li>1호선 남영역 1번출구 - 마을버스 용산 04번 탑승 - 숙대(정·후문) 하차</li>
+                <li>6호선 효창공원앞역 2번출구 - 간선버스 400번, 지선버스 2016번 탑승 - 숙대(정·후문) 하차 </li>
+                <li>경의·중앙선 효창공원앞역 4번출구 - 간선버스 400번, 지선버스 2016번 탑승 - 숙대(정·후문) 하차 </li>
+            </ul>
+        </section>
+        <section class="sec4">
+            <p>
+                <img src="./img/walk.jpg" alt="">
+            </p>
+            <ul>
+                <li>도보</li>
+                <li>4호선 숙대입구역 10번출구 - 효창공원 방면 15분 도보 </li>
+                <li>1호선 남영역 1번출구 - 효창공원 방면 15분 도보</li>
+                <li>6호선 효창공원앞역 2번출구 - 효창공원 방면 15분 도보 </li>
+                <li>경의·중앙선 효창공원앞역 4번출구 - 효창공원 방면 15분 도보 </li>
+            </ul>
+        </section>
+        <section class="sec5">
+            <p>
+                <img src="./img/car.jpg" alt="">
+            </p>
+            <ul>
+                <li>자차 <a>출발지 클릭 자세히보기</a></li>
+                <li>서부시외버스터미널
+                    김포공항
+                    인천방향</li>
+                <li>상봉터미널
+                    동서울터미널
+                    서울고속버스터미널</li>
+                <li>반포IC
+                    남부터미널</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+
+</html>

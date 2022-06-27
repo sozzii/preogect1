@@ -1,0 +1,92 @@
+@import url(./common.css);
+@import url(./sub_common.css);
+
+main{
+    width: 100%;
+}
+
+main .con1 .tit-sub p:nth-of-type(5){
+    color: #004796;
+    font-weight: bold;
+}
+
+/*  */
+
+.sec2, .sec3{
+    width: 1400px;
+    margin: 100px auto;
+}
+
+.sec2 ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.sec2 ul li a{
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #004796;
+    font-weight: bold;
+    display: block;
+    
+}
+
+.sec2 ul li a.active::after{
+    content:'';
+    display:block;
+    border-bottom:2px solid #004796;
+}
+
+/*  */
+
+.sec3 ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.sec3 li{
+    margin: 50px;
+}
+
+.sec3 li img{
+    width: 220px;
+    height: 280px;
+    border-radius: 5px;
+    transition: 0.7s;
+    border: 1px solid #eee;
+}
+
+.sec3 li img:hover{
+    transform: scale(1.2)
+}
+
+.sec3 li p span{
+    color: #404040;
+    font-size: 15px;
+}
+
+.sec3 li p:nth-of-type(2){
+    text-align: center;
+    padding-top: 20px;
+    color: #004796;
+    font-size: 18px;
+}
+
+.sec3 li p:nth-of-type(3){
+    text-align: center;
+    padding-top: 30px;
+    color: #666666;
+}
+
+.number{
+    margin: 100px auto;
+    text-align: center;
+}
+
+.number a{
+    margin: 10px;
+}

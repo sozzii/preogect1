@@ -1,0 +1,414 @@
+@import url(./common.css);
+
+main{
+    position: relative;
+}
+
+.set1 > .m1 > ul{
+    position: absolute;
+    top: 27%;
+    right: 0%;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 2s;
+}
+
+.set1 > .m1 > ul.active{  
+    transform: translateX(0%);
+}
+
+
+.set1 > .m1 > ul > li{
+    display: inline-block;
+    width: 320px;
+    height: 310px;
+    text-align: center;
+    margin: 0 20px;
+    padding: 50px;
+    border: 1px solid rgba(0, 71, 150, 0.1);
+    border-radius: 10px;
+    background-color: white;
+    transition: .5s;
+}
+
+
+.set1 > .m1 > ul > li > p{
+    padding: 10px;
+}
+
+.set1 > .m1 > ul > li > p:nth-of-type(2){
+    color: #004796;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+.set1 > .m1 > ul > li > p:nth-of-type(3){
+    text-align: center;
+    font-size: 14px;
+}
+
+.set1 > .m1 > .text1 {
+    position: absolute; 
+    left: 12%;
+    top: 10%;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 0px 1px #999999;
+    animation: txtani .6s forwards;
+    transform: translateY(100%);
+}
+
+.set1 > .m1 > .text1.active{
+    animation: txtani .6s forwards;
+} 
+
+@keyframes txtani{
+    100%{transform: translateY(0%);}
+}
+
+.set1 > .m1 > .text1 > p:nth-of-type(3){
+    font-size: 22px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.set1 > .m1 > .text1 span{
+    color: #004796;
+    text-shadow: 1px 0px 1px #999999;
+}
+
+/*  */
+
+.quick{
+    position:fixed;
+    display: block;
+    right: 0px;
+    top: 15%;
+    width: 90px;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 5;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.quick p{
+    background-color: #004796;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    transition: .5s;
+}
+
+.quick a{
+    margin: 20px;
+    line-height: 30px;
+    transition: .5s;
+}
+
+.quick a:nth-of-type(3){
+    margin: 0;
+}
+
+.quick div{
+    display: none;
+    height: 100px;
+    padding: 2px;
+}
+
+.quick p.active{
+    background-color: #004796;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    transition: .5s;
+}
+
+.quick div.active{
+    position: relative;
+    display: block;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    transition: .5s;
+}
+
+.quick button{
+    position: fixed;
+    bottom: 65%;
+    right: 1.7%;
+    border-radius: 100%;
+    border: 1px solid rgba(0,0,0,0.1);
+    color: #004796;
+    padding: 2px;
+    width:30px;
+    height: 30px;
+    background-color: white;
+    transition: .5s;
+}
+
+.quick button:hover{
+    border: 1.5px solid #004796;
+}
+
+.quick div a:hover{
+    font-weight: bold;
+}
+
+.quick p:hover{
+    font-weight: bold;
+}
+
+/*  */
+
+.set2{
+    margin: 200px auto;
+}
+
+.set2 article{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.set2 article .text2{
+    width: 35%;
+}
+
+.set2 article ul li{
+    padding: 10px;
+}
+
+.set2 .text2 .board {
+    border-bottom: 2px solid #004796;
+}
+
+.set2 .text2 .board2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.set2 .text2 ul.board2-1{
+    display: none;
+}
+
+.set2 .text2 div.board2-1:hover ul.board2-1{
+    display: block;
+}
+
+.set2 .text2 .board2 a{
+    margin-right: 20px;
+}
+
+
+.set2 .text2 .board .plus{
+    border-radius: 100%;
+    width: 25px;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.set2 .text2 .board .plus:hover,
+.set2 article .banner a:hover{
+    animation: plus1 1s forwards;
+}
+
+@keyframes plus1{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.set2 article .text2 .board {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.set2 article ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.set2 article ul li p:nth-of-type(1){
+    color: #004796;
+    font-weight: bold;
+}
+
+.set2 article ul li b{
+    color: #F4B41C;
+}
+
+.set2 article .banner{
+    position: relative;
+    border: 1px solid #004796;
+    padding: 50px;
+    font-size: 1.5rem;
+    width: 30%;
+    text-align: center;
+    color: #004796;
+}
+
+.set2 article .banner a{
+    position: absolute;
+    bottom: 10px;
+    left: -30px;    
+    width: 30%;
+    font-size: 3rem;
+    color: #F4B41C;
+}
+
+
+/*  */
+
+.set3 {
+    position: relative;
+    background-color: #004796;
+    padding: 200px 0;
+    width: 100%;
+}
+
+.set3 .txt1, .txt2{
+    color: rgba(255,255,255,0.1);
+    font-weight: bold;
+    font-size: 9rem;
+    text-align: center;
+    letter-spacing: 4px;
+    position: absolute;
+    white-space: nowrap;
+    display: flex;
+    width: 100%;
+    
+}
+.set3 .txt1 p, .txt2 p{margin:0;}
+
+.set3 .txt1{ 
+    width: 100%;
+    left: 0;
+    top: 0;
+    animation: txtmove 10s infinite linear;
+}
+
+.set3 .txt2{
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    animation: txt2move 10s infinite linear;
+}
+
+@keyframes txtmove {
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(0%);}
+}
+
+@keyframes txt2move {
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(-100%);}
+}
+
+.set3 .vdo ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 50px;
+    width: 100%;
+}
+
+.set3 .vdo ul li{
+    position: relative;
+}
+
+.set3 .vdo ul li p{
+    display: flex;
+    align-items: center;
+}
+
+.set3 .vdo ul li p img{
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+    border: 5px solid white;    
+}
+
+.set3 .vdo ul li p:nth-of-type(2){
+    position: absolute;
+    transform: translate(30%, 30%);
+    color: white;
+    width: 250px;
+    text-align: center;
+}
+
+.set3 .vdo ul li:nth-of-type(3) p:nth-of-type(2){
+    transform: translate(50%, 30%);
+}
+
+.set3 .vdo ul li > p > a{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 5.5rem;
+    position: absolute;
+    left: 50px;
+    transform: translate(150%,5%);
+}
+
+.set3 .vdo ul li:hover > p:nth-of-type(1){
+    opacity: 1;
+}
+
+.set3 .vdo ul li > p:nth-of-type(1):hover > a{
+    font-size: 6rem;
+    transform: translate(130%, 5%);
+    transition: .3s;
+}
+
+
+/*  */
+
+.set4 .photo{
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.set4 .photo ul{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.set4 .photo ul li{
+    margin: 100px 30px ;
+    overflow: hidden;
+}
+
+
+.set4 .photo ul li p{
+    text-align: center;
+}
+
+.set4 .indi4 a{
+    color: #004796;
+    z-index: 2;
+    font-size: 4rem;
+}
+
+.set4 .indi4 a:nth-of-type(1){
+    position: absolute;
+    left: 5%;
+    top: 35%;
+}
+
+.set4 .indi4 a:nth-of-type(2){
+    position: absolute;
+    right: 5%;
+    top: 35%;
+}
+
+
+
+
+
+

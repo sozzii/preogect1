@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숙명여자대학교 아동예술교육전공</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./common.js"></script>
+    <link rel="stylesheet" href="./sm.css">
+    <link rel="stylesheet" href="./slick.css">
+    <link rel="stylesheet" href="./slick.min.js">
+    <link rel="stylesheet" href="./slide.js">
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <main>
+        <div class="slide">
+            <figure>
+                <img src="img/visual (1).jpg">
+            </figure>
+            <figure>
+                <img src="img/spring.img (5).jpg">
+            </figure>
+            <figure>
+                <img src="img/autumn.visual (1).jpg">
+            </figure>
+            <figure>
+                <img src="img/winter.jpg">
+            </figure>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="./slick.min.js" type="text/javascript" charset="utf-8"></script>
+        <!-- <link rel="stylesheet" href="./slick-theme.css"> -->
+
+        <script type="text/javascript">
+            $(function () {
+                $(".slide").slick({
+                    dots: false,
+                    // vertical: true,
+                    // centerMode: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                });
+            });
+        </script>
+
+        <section class="set1">
+            <h1></h1>
+            <div class="m1">
+                <ul>
+                    <li>
+                        <p>
+                            <img src="img/potal.png" alt="포털">
+                        </p>
+                        <p>포털사이트</p>
+                        <p>
+                            수강신청, 논문신청, 성적조회 등 <br>각종 신청·조회를 할 수 있습니다.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <img src="img/online.png" alt="snowboard">
+                        </p>
+                        <p>SNOWBOARD</p>
+                        <p>
+                            온라인 강의를 수강하는<br> 페이지 입니다.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <img src="img/book.png" alt="중앙도서관">
+                        </p>
+                        <p>중앙도서관</p>
+                        <p>
+                            교내 다양한 책과 논문 자료를 <br>찾아볼 수 있습니다.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <img src="img/whatch.png" alt="학사일정">
+                        </p>
+                        <p>학사일정</p>
+                        <p>
+                            연간 행사일정을<br> 확인할 수 있습니다.
+                        </p>
+                    </li>
+                </ul>
+
+                <div class="text1">
+                    <p>
+                        <span>아동</span>과 소통하는 예술.
+                    </p>
+                    <p>
+                        <span>예술</span>로 성장하는 아동.
+                    </p>
+                    <p>
+                        Arts <span>EDUCATION</span> for Children
+                    </p>
+                </div>
+
+
+                <div class="quick">
+                    <p>QUICK MENU </p>
+                    <div>
+                        <a href="sub11.css">논문</a>
+                        <a href="sub3.html">자격증</a>
+                        <a href="sub5.css">유관학과</a>
+                        <button>X</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            $(window).on('scroll',function(){
+                $('.set1 .m1 ul').removeClass('active');
+                $('.set1 .m1 ul').addClass('active');
+            });
+            
+            const btn = document.querySelector('.quick button');
+            const txt = document.querySelector('.quick div');
+            const qmenu = document.querySelector('.quick p');
+
+            qmenu.addEventListener('click', function () {
+                txt.classList.add('active');
+            });
+
+            btn.addEventListener('click', function () {
+                txt.classList.remove('active');
+            });
+
+        </script>
+
+        <section class="set2">
+            <h1></h1>
+            <article>
+                <div class="text2">
+                    <div class="board">
+                        <div class="board2">
+                            <a href="">공지사항</a>
+                            <a href="" class="board2-1">자료실</a>
+                        </div>
+                        <a href="" class="plus">+</a>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <p> <b>공지</b> </p>
+                            <p> 2022학년도 후기 신입생 모집안내</p>
+                            <p> 2022.05.27</p>
+                        </li>
+                        <li>
+                            <p> <b>공지</b> </p>
+                            <p> 7기 신입생 환영회 안내</p>
+                            <p> 2022.03.20</p>
+                        </li>
+                        <li>
+                            <p> 모집 </p>
+                            <p> 예술교육학과 앙상블 소사이어티 모집 안내</p>
+                            <p> 2022.04.21</p>
+                        </li>
+                        <li>
+                            <p> 논문 </p>
+                            <p> 2022학년도 상반기 논문 대상자 일정 안내</p>
+                            <p> 2022.03.02</p>
+                        </li>
+                        <li>
+                            <p> 기타 </p>
+                            <p> SPSS 설치 안내</p>
+                            <p> 2022.04.28</p>
+                        </li>
+                        <li>
+                            <p> 모집 </p>
+                            <p> 아동예술교육 전공 행정조교 모집 안내</p>
+                            <p> 2022.03.23</p>
+                        </li>
+                    </ul>
+
+                    <ul class="board2-1">
+                        <li>
+                            <p> 논문 </p>
+                            <p> 부부간의 양육태도 차이에 따른 아동의 사회적 역량과 놀이행동 분석 </p>
+                            <p> 2022.05.27</p>
+                        </li>
+
+                        <li>
+                            <p> 영상 </p>
+                            <p> 자연과 함께하는 즉흥 토크콘서트 1_OPENING</p>
+                            <p> 2022.05.02</p>
+                        </li>
+                        <li>
+                            <p> 사진 </p>
+                            <p> 7기 신입생 환영회</p>
+                            <p> 2022.04.21</p>
+                        </li>
+                        <li>
+                            <p> 도서</p>
+                            <p> 통합예술교육이란 무엇인가?</p>
+                            <p> 2022.03.20</p>
+                        </li>
+                        <li>
+                            <p> 기타 </p>
+                            <p> 예술교육 지원 프로그램</p>
+                            <p> 2022.03.18</p>
+                        </li>
+                        <li>
+                            <p> 논문 </p>
+                            <p> 학술지 논문</p>
+                            <p> 2022.03.03</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner">
+                    <p>2022학년도 후기<br> 아동예술육전공<br> 석사과정 <b>신입생 모집안내</b></p>
+                    <p><a href="" alt="">+</a></p>
+                </div>
+            </article>
+        </section>
+
+        <section class="set3">
+            <!-- <h3></h3> -->
+            <div class="txt1">
+                <p>ARTS EDUCATION OF CHILDREN</p>
+                <p>ARTS EDUCATION OF CHILDREN</p>
+            </div>
+            <div class="vdo">
+                <ul>
+                    <li>
+                        <p href="https://youtu.be/v1LsuXyJ9qM" target="">
+                            <img src="img/desert-7008952_1280.jpg" alt="">
+                            <a href="" alt="">▶</a>
+                        </p>
+                        <p>자연과 함께하는 즉흥 토크콘서트 1_OPENING</p>
+                    </li>
+
+                    </li>
+                    <li>
+                        <p href="https://youtu.be/v1LsuXyJ9qM" target="">
+                            <img src="imges/Untitled-2.jpg" alt="">
+                            <a href="" alt="">▶</a>
+                        </p>
+                        <p>자연과 함께하는 즉흥 토크콘서트 <br>2_주임교수님 INTERVIEW</p>
+                    </li>
+                    <li>
+                        <p href="https://youtu.be/v1LsuXyJ9qM" target="">
+                            <img src="imges/Untitled-3.jpg" alt="">
+                            <a href="" alt="">▶</a>
+                        </p>
+                        <p>SAMPLE CLASS <br>1_음악교육프로그램 개발</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="txt2">
+                <p>ARTS EDUCATION OF CHILDREN</p>
+                <p>ARTS EDUCATION OF CHILDREN</p>
+            </div>
+        </section>
+
+        <section class="set4">
+            <div class="photo">
+                <ul>
+                    <li>
+                        <a href="" target="">
+                            <img src="img/img_01.jpg" alt="">
+                        </a>
+                        <p>7기 신입생 환영회</p>
+                    </li>
+                    <li>
+                        <a href="" target="">
+                            <img src="img/img_01.jpg" alt="">
+                        </a>
+                        <p>스승의 날</p>
+                    </li>
+                    <li>
+                        <a href="" target="">
+                            <img src="img/img_01.jpg" alt="">
+                        </a>
+                        <p>소사이어티 앙상블 현장</p>
+                    </li>
+                    <li>
+                        <a href="" target="">
+                            <img src="img/img_01.jpg" alt="">
+                        </a>
+                        <p>지역아동 예술교육 현장</p>
+                    </li>
+                    <li>
+                        <a href="" target="">
+                            <img src="img/img_01.jpg" alt="">
+                        </a>
+                        <p>아동예술 특강</p>
+                    </li>
+                </ul>
+
+                <div class="indi4">
+                    <a>◀</a>
+                    <a>▶</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <style>
+        main .set2,
+        main .set3,
+        main .set4 {
+            opacity: 0;
+            transition: 1s;
+            transform: translateY(100%);
+        }
+
+        main .set2.active,
+        main .setn3.active,
+        main .set3.active,
+        main .set4.active {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    </style>
+
+
+    <script>
+        
+        function init() {
+            let posY;
+            let winH = $(window).height();
+            let scrollTop;
+
+            $(window).on('scroll', function () {
+                scrollTop = $(window).scrollTop();
+
+                $('section').each(function (i) {
+                    posY = $('section').eq(i).offset().top;
+
+                    if (posY - winH < scrollTop) {
+                        $('section').eq(i).addClass('active').top;
+                    }
+                })
+            })
+        }
+        $(window).on('load', init);
+    </script>
+
+</body>
+
+</html>

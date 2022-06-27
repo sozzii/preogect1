@@ -1,0 +1,68 @@
+@import url(./common.css);
+@import url(./sub_common.css);
+
+main{
+    width: 100%;
+}
+
+main .con1 .tit-sub p:nth-of-type(3){
+    color: #004796;
+    font-weight: bold;
+}
+
+
+/*  */
+
+.sec2{
+    width: 1400px;
+    margin: 100px auto;
+}
+
+.sec2 ul{
+    margin: 100px;
+}
+
+.sec2 ul li{}
+
+.sec2 ul li:nth-of-type(1){
+    color: #004796;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sec2 ul li:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec2 ul li p:nth-of-type(1){
+    width: 600px;
+    line-height: 30px;
+    color: #666666;
+}
+
+.sec2 ul li p:nth-of-type(2) img{
+    width: 400px;
+    border-radius: 5px;
+}
+
+.sec2 ul li:nth-of-type(3){
+    color: #004796;
+} 
+
+.sec2 ul li a{
+    font-weight: bold;
+    padding: 0 7px;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid #666666;
+    border-radius: 100%;
+}
+
+.sec2 ul li span{
+    color: #004796;
+}
+
+
+

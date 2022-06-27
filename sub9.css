@@ -1,0 +1,40 @@
+<<<<<<< HEAD
+@import url(./common.css);
+@import url(./sub_common.css);
+
+main{
+    width: 100%;
+}
+
+main .con1 .tit-sub p:nth-of-type(3){
+    color: #004796;
+    font-weight: bold;
+}
+
+/*  */
+
+.sec2{
+    width: 1400px;
+    margin: 100px auto;
+    text-align: center;
+=======
+@import url(./common.css);
+@import url(./sub_common.css);
+
+main{
+    width: 100%;
+}
+
+main .con1 .tit-sub p:nth-of-type(3){
+    color: #004796;
+    font-weight: bold;
+}
+
+/*  */
+
+.sec2{
+    width: 1400px;
+    margin: 100px auto;
+    text-align: center;
+>>>>>>> 3c1591a21087df9f0e6cdf738a8266cefb05abf6
+}

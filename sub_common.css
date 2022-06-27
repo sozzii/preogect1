@@ -1,0 +1,25 @@
+@import url(./common.css);
+@import url(./sub_common.css);
+
+main .sec1{
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #666666;
+}
+
+
+main .con1{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 50px;
+}
+
+main .con1 .tit-sub{
+    color: #666666;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 5px;
+    align-items: center;
+}
