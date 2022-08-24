@@ -202,6 +202,7 @@ footer{
     margin: 2px;
     display: block;
     width: 15px;
+    cursor: pointer;
 }
 
 .foot .site .sm-site p:nth-of-type(2){padding-right: 0;}
@@ -275,6 +276,7 @@ transition: .5s;
     border: 1px solid #666666;
     padding: 0 15px 15px 15px;
     transition: .5s;
+    color: #666666;
 }
 
 .burger .outsite2.active{    
@@ -288,4 +290,12 @@ transition: .5s;
     border: 1px solid #666666;
     padding: 0 15px 15px 15px;
     transition: .5s;
+}
+
+.burger button{
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1px solid #666666;
+    color:#666666 ;
+    cursor: pointer;
 }
