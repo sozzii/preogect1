@@ -19,6 +19,10 @@ html, body{
     margin: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 p{margin: 0;}
 
 ul,li{
