@@ -22,25 +22,20 @@ function headerdown() {
 
 $('footer').load('footer.html .foot', footerFun);
 
+
 function footerFun() {
-    const burger1 = document.querySelector('.insite');
-    const insite = document.querySelector('.insite2');
-    const burger2 = document.querySelector('.outsite');
-    const outsite = document.querySelector('.outsite2');
-    const outbtn = document.querySelectorAll('.burger button');
-
-
-    burger1.addEventListener('click', function () {
-        insite.classList.add('active');
+    $('.insite p:nth-of-type(2)').on('click', function () {
+        $('.insite2').addClass('active');
     });
-
-
-    burger2.addEventListener('click', function () {
-        outsite.classList.add('active');
-        burger2.addEventListener('click', function () {
-            outbtn.classList.remove('active');
-        });
+    $('.insite2 button').on('click', function () {
+        $('.insite2').removeClass('active');
+    });
+    
+    $('.outsite p:nth-of-type(2)').on('click', function () {
+        $('.outsite2').addClass('active');
+    });
+    $('.outsite2 button').on('click', function () {
+        $('.outsite2').removeClass('active');
     });
 }
-
 $(window).on('scroll', headerdown);
